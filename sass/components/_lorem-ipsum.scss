@@ -1,0 +1,35 @@
+.lorem-ipsum {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__icons {
+        text-align: center;
+        background-color: $bg-iconColor;
+        width: 270px;
+        height: 120px;
+        padding: 25px 100px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: $fontSizeSmall;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding-top: 30px;
+    }
+    &__description {
+        font-size: $fontSizeSmall;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $contactColor;
+        text-align: left;
+        width: 270px;
+        height: 75px;
+        padding-bottom: 94px;
+    }
+}

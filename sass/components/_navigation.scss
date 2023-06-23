@@ -1,0 +1,105 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1600px;
+    height: 80px;
+    list-style: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &__left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 46px;
+        list-style: none;
+    }
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        list-style: none;
+        margin: auto;
+        color: $contactColor;
+        padding-left: 345px;
+    }
+    &__logo {
+        font-family: $fontFamilyGlobal;
+        font-style: normal;
+        font-weight: 700;
+        font-size: $fontSizeTitle;
+        line-height: 1.4;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        text-shadow: 2px, 2px, 4px, $textColor;
+        color: $accentColor;
+        color: $primaryColor;
+
+        &__logo--web {
+            color: $accentColor;
+        }
+    }
+    &__links {
+        color: $primaryColor;
+        cursor: pointer;
+        font-size: inherit;
+        font-weight: 500;
+        text-decoration: none;
+        display: flex;
+
+        &__links:active,
+        &__links:hover {
+            color: $accentColor;
+            transition-duration: 250ms;
+            transition-timing-function: $cubicBezier;
+        }
+    }
+    &__underscore {
+        position: relative;
+        top: 28px;
+
+        &__underscore::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 53px;
+            height: 4px;
+            background-color: $accentColor;
+            border-radius: 2px;
+        }
+    }
+    &__icons {
+        fill: $social-iconColor;
+        cursor: pointer;
+        color: $social-iconColor;
+        font-size: 14px;
+        font-size: inherit;
+        font-weight: 500;
+        justify-content: right;
+
+        &__icons:hover,
+        &__icons:focus {
+            color: $accentColor;
+            fill: $accentColor;
+            transition-duration: 250ms;
+            transition-timing-function: $cubicBezier;
+        }
+    }
+    &__underscore-portfolio {
+        position: relative;
+        top: 28px;
+
+        &__underscore-portfolio::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 58px;
+            height: 4px;
+            background-color: $accentColor;
+            border-radius: 2px;
+        }
+    }
+}

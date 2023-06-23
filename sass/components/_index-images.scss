@@ -1,0 +1,29 @@
+.index-images {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    list-style: none;
+    justify-content: space-between;
+    padding-bottom: 94px;
+
+    &__title > &__label {
+        position: absolute;
+        bottom: 0;
+        font-family: $fontFamilyGlobal;
+        font-weight: 700;
+        font-size: $fontSizeSmall;
+        background-color: $bg-labelColor;
+        color: $titleColor;
+        width: 370px;
+        height: 70px;
+        text-align: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+    &__title {
+        position: relative;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: flex;
+    }
+}

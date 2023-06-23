@@ -1,0 +1,109 @@
+.footer {
+    font-style: normal;
+    font-size: $fontSizeSmall;
+    color: $titleColor;
+    line-height: 1.7;
+    background-color: $bgColor;
+    height: 252px;
+    padding-top: 60px;
+
+    &__sections {
+        display: flex;
+    }
+    &__logo {
+        font-family: $fontFamilyGlobal;
+        font-style: normal;
+        color: $titleColor;
+        font-weight: 700;
+        font-size: 26px;
+        background-color: $bgColor;
+        text-decoration: none;
+    }
+    &__address {
+        font-style: normal;
+        padding-top: 20px;
+        padding-bottom: 9px;
+        padding-right: 70px;
+        line-height: 1, 7;
+    }
+    &__contact {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: $fontSizeSmall;
+        line-height: 1.7;
+        cursor: pointer;
+
+        &:active,
+        &:hover {
+            color: $accentColor;
+            transition-duration: 250ms;
+            transition-timing-function: $cubicBezier;
+        }
+    }
+    &__social {
+        margin-top: 20px;
+        justify-content: center;
+
+        &--name {
+            font-family: $fontFamilyGlobal;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            font-style: normal;
+        }
+        &--list {
+            display: flex;
+            max-width: 206px;
+            list-style: none;
+            margin-right: 0;
+        }
+        &--item {
+            fill: $titleColor;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.25);
+            margin-top: 20px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            align-items: center;
+
+            &:hover {
+                background-color: $accentColor;
+                border-radius: 50%;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+            }
+        }
+    }
+    &__newsletter {
+        padding-left: 78px;
+        padding-top: 20px;
+
+        &name {
+            font-family: $fontFamilyGlobal;
+            font-weight: 700;
+            font-size: $fontSizeSmall;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            font-style: normal;
+        }
+
+        &--input {
+            width: 358px;
+            height: 50px;
+            color: $contactColor;
+            background-color: inherit;
+            border: 1px solid $social-iconColor;
+            border-radius: 4px;
+            padding-left: $fontSizeMedium;
+        }
+        &--icon {
+            fill: $titleColor;
+        }
+    }
+    &__button {
+        margin-top: 20px;
+        display: flex;
+        gap: 12px;
+    }
+}

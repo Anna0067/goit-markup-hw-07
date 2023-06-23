@@ -1,0 +1,29 @@
+.company-icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    fill: $social-iconColor;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 94px;
+
+    &__border {
+        list-style: none;
+        cursor: pointer;
+        padding: 16px 32px;
+        width: 170px;
+        height: 92px;
+        margin-right: auto;
+        border-width: 1px;
+        border: 1px solid $social-iconColor;
+        border-radius: 4px;
+
+        &__border:hover,
+        &__borders:focus {
+            fill: $accentColor;
+            border-color: $accentColor;
+            transition-duration: 250ms;
+            transition-timing-function: $cubicBezier;
+        }
+    }
+}
