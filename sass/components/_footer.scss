@@ -18,7 +18,12 @@
         font-size: 26px;
         background-color: $bgColor;
         text-decoration: none;
+
+        &--web {
+            color: $accentColor;
+        }
     }
+
     &__address {
         font-style: normal;
         padding-top: 20px;
@@ -79,7 +84,7 @@
         padding-left: 78px;
         padding-top: 20px;
 
-        &name {
+        &--name {
             font-family: $fontFamilyGlobal;
             font-weight: 700;
             font-size: $fontSizeSmall;

@@ -25,18 +25,20 @@
         padding-left: 345px;
     }
     &__logo {
-        font-family: $fontFamilyGlobal;
         font-style: normal;
         font-weight: 700;
-        font-size: $fontSizeTitle;
+        font-size: 26px;
         line-height: 1.4;
         letter-spacing: 0.03em;
         text-decoration: none;
+        text-shadow: 2px, 2px, 4px, $primaryColor;
+        font-family: $fontFamilyGlobal;
+        letter-spacing: 0.03em;
         text-shadow: 2px, 2px, 4px, $textColor;
         color: $accentColor;
         color: $primaryColor;
 
-        &__logo--web {
+        &--web {
             color: $accentColor;
         }
     }
@@ -48,18 +50,34 @@
         text-decoration: none;
         display: flex;
 
-        &__links:active,
-        &__links:hover {
+        &:active,
+        &:hover {
             color: $accentColor;
             transition-duration: 250ms;
             transition-timing-function: $cubicBezier;
+        }
+    }
+    &__icons {
+        color: $contactColor;
+        fill: $contactColor;
+        cursor: pointer;
+        font-weight: 500;
+        justify-content: right;
+        font-size: $fontSizeSmall;
+        transition-duration: 250ms;
+        transition-timing-function: $cubicBezier;
+
+        &:active,
+        &:hover {
+            color: $accentColor;
+            fill: $accentColor;
         }
     }
     &__underscore {
         position: relative;
         top: 28px;
 
-        &__underscore::after {
+        &::after {
             content: "";
             position: absolute;
             left: 0;
@@ -70,23 +88,7 @@
             border-radius: 2px;
         }
     }
-    &__icons {
-        fill: $social-iconColor;
-        cursor: pointer;
-        color: $social-iconColor;
-        font-size: 14px;
-        font-size: inherit;
-        font-weight: 500;
-        justify-content: right;
 
-        &__icons:hover,
-        &__icons:focus {
-            color: $accentColor;
-            fill: $accentColor;
-            transition-duration: 250ms;
-            transition-timing-function: $cubicBezier;
-        }
-    }
     &__underscore-portfolio {
         position: relative;
         top: 28px;

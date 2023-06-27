@@ -18,8 +18,8 @@
         border: 1px solid $social-iconColor;
         border-radius: 4px;
 
-        &__border:hover,
-        &__borders:focus {
+        &:hover,
+        &:focus {
             fill: $accentColor;
             border-color: $accentColor;
             transition-duration: 250ms;
