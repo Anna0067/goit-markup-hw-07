@@ -138,6 +138,10 @@
                 border: 1px solid $contactColor;
             }
         }
+        &:checked ~ .checkbox__checked .checkbox__bacground {
+            display: block;
+            visibility: visible;
+        }
 
         &--input:checked
             ~ .modal__checkbox--checked
