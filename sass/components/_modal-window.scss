@@ -130,7 +130,6 @@
             transition: border 250ms $cubicBezier;
             cursor: pointer;
         }
-
         &--input:checked ~ .acceptance-checked {
             border: 0 solid $bg-iconColor;
 
@@ -139,12 +138,17 @@
                 border: 1px solid $contactColor;
             }
         }
-
         &:checked ~ .checkbox__checked .checkbox__bacground {
             display: block;
             visibility: visible;
         }
 
+        &--input:checked
+            ~ .modal__checkbox--checked
+            .modal__checkbox--bacground {
+            display: block;
+            visibility: visible;
+        }
         &--bacground {
             fill: $titleColor;
             background-color: $bg-iconColor;
