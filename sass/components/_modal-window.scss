@@ -15,8 +15,8 @@
     &__close {
         border-radius: 50%;
         border-color: $bg-iconColor;
-        color: $textColor;
-        fill: $textColor;
+        color: $primaryColor;
+        fill: $primaryColor;
         width: 30px;
         height: 30px;
         background-color: $titleColor;
@@ -24,8 +24,6 @@
         top: 8px;
         left: 91%;
         cursor: pointer;
-        transition: background-color 250ms $cubicBezier color 250ms $cubicBezier;
-        margin-top: 20px;
     }
     &__style {
         display: flex;
@@ -132,6 +130,7 @@
             transition: border 250ms $cubicBezier;
             cursor: pointer;
         }
+
         &--input:checked ~ .acceptance-checked {
             border: 0 solid $bg-iconColor;
 
@@ -139,12 +138,13 @@
             &:focus {
                 border: 1px solid $contactColor;
             }
-
-            &:checked ~ .checkbox__checked .checkbox__bacground {
-                display: block;
-                visibility: visible;
-            }
         }
+
+        &:checked ~ .checkbox__checked .checkbox__bacground {
+            display: block;
+            visibility: visible;
+        }
+
         &--bacground {
             fill: $titleColor;
             background-color: $bg-iconColor;
