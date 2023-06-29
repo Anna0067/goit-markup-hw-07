@@ -12,3 +12,9 @@
     transition-duration: 250ms;
     transition-timing-function: $cubicBezier;
 }
+@media screen and (min-width: 768px) {
+    .backdrop {
+        top: 20px;
+        bottom: 20px;
+    }
+}

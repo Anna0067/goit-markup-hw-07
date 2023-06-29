@@ -1,12 +1,32 @@
 .navigation {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    max-width: 1600px;
+    max-width: 480px;
     height: 80px;
     list-style: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
+
+    &__mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 130px;
+    }
+
+    &__icon {
+        background-color: transparent;
+        border: none;
+        height: 16px;
+        cursor: pointer;
+        fill: $primaryColor;
+        justify-content: flex-end;
+
+        &:focus {
+            fill: $accentColor;
+        }
+
+        @media screen and (min-width: 481px) {
+            display: none;
+        }
+    }
 
     &__left {
         display: flex;
@@ -15,15 +35,7 @@
         gap: 46px;
         list-style: none;
     }
-    &__right {
-        display: flex;
-        justify-content: flex-end;
-        gap: 30px;
-        list-style: none;
-        margin: auto;
-        color: $contactColor;
-        padding-left: 345px;
-    }
+
     &__logo {
         font-style: normal;
         font-weight: 700;
@@ -37,11 +49,14 @@
         text-shadow: 2px, 2px, 4px, $textColor;
         color: $accentColor;
         color: $primaryColor;
+        padding-left: 15px;
+        padding-right: 160px;
 
         &--web {
             color: $accentColor;
         }
     }
+
     &__links {
         color: $primaryColor;
         cursor: pointer;
@@ -57,9 +72,13 @@
             transition-timing-function: $cubicBezier;
         }
     }
-    &__icons {
-        color: $contactColor;
-        fill: $contactColor;
+    @media screen and (max-width: 480px) {
+        &__links {
+            display: none;
+        }
+    }
+    &__icon {
+        fill: $primaryColor;
         cursor: pointer;
         font-weight: 500;
         justify-content: right;
@@ -73,35 +92,117 @@
             fill: $accentColor;
         }
     }
+
     &__underscore {
         position: relative;
         top: 28px;
 
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            display: block;
-            width: 53px;
-            height: 4px;
-            background-color: $accentColor;
-            border-radius: 2px;
+        @media screen and (min-width: 481px) {
+            &__underscore {
+                display: none;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                display: block;
+                width: 53px;
+                height: 4px;
+                background-color: $accentColor;
+                border-radius: 2px;
+            }
+        }
+
+        &__underscore-portfolio {
+            position: relative;
+            top: 28px;
+
+            &__underscore-portfolio::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                display: block;
+                width: 58px;
+                height: 4px;
+                background-color: $accentColor;
+                border-radius: 2px;
+            }
         }
     }
+}
+@media screen and (min-width: 480px) {
+    .navigation__right {
+        display: none;
+    }
+}
 
-    &__underscore-portfolio {
-        position: relative;
-        top: 28px;
+.main__button {
+    color: $titleColor;
+    cursor: pointer;
+    background-color: $accentColor;
+    font-weight: 700;
+    font-size: $fontSizeMedium;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+}
 
-        &__underscore-portfolio::after {
-            content: "";
-            position: absolute;
-            left: 0;
+@media screen and (min-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 768px;
+        height: 80px;
+        list-style: none;
+
+        &__logo {
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 20px;
+        }
+        &__right {
             display: block;
-            width: 58px;
-            height: 4px;
-            background-color: $accentColor;
-            border-radius: 2px;
+            justify-content: flex-end;
+            text-decoration: none;
+            list-style: none;
+            color: $contactColor;
+            font-size: 12px;
+            font-family: $fontFamilyGlobal;
+            font-style: normal;
+            font-weight: 500;
+            padding-top: 21px;
+            padding-right: 10px;
+        }
+
+        &__left {
+            display: flex;
+            justify-content: flex-start;
+            list-style: none;
+        }
+
+        &__links {
+            color: $primaryColor;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+
+            &:active,
+            &:focus {
+                color: $accentColor;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+            }
+        }
+        &__icons {
+            fill: $contactColor;
+            cursor: pointer;
+            color: $contactColor;
+            font-size: 14px;
+            font-size: inherit;
+            font-weight: 500;
         }
     }
 }

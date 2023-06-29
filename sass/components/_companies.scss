@@ -1,14 +1,48 @@
+@media screen and (min-width: 1200px) {
+    .company-icons {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        fill: $social-iconColor;
+        gap: 30px;
+        padding-top: 50px;
+        padding-bottom: 94px;
+
+        &__border {
+            list-style: none;
+            cursor: pointer;
+            padding: 16px 32px;
+            width: 170px;
+            height: 92px;
+            margin-right: auto;
+            border-width: 1px;
+            border: 1px solid $social-iconColor;
+            border-radius: 4px;
+
+            &:hover,
+            &:focus {
+                fill: $accentColor;
+                border-color: $accentColor;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+            }
+        }
+    }
+}
+
 .company-icons {
     display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    margin-left: 40px;
+    padding: 30px 15px 60px;
     fill: $social-iconColor;
     gap: 30px;
-    padding-top: 50px;
-    padding-bottom: 94px;
+    list-style: none;
 
     &__border {
-        list-style: none;
         cursor: pointer;
         padding: 16px 32px;
         width: 170px;
@@ -24,6 +58,40 @@
             border-color: $accentColor;
             transition-duration: 250ms;
             transition-timing-function: $cubicBezier;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .company-icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 768px;
+        height: 400px;
+        padding: 30px 15px 60px;
+        fill: $social-iconColor;
+        gap: 30px;
+        list-style: none;
+        margin: auto;
+
+        &__border {
+            cursor: pointer;
+            padding: 16px 32px;
+            width: 226px;
+            height: 92px;
+            margin-right: auto;
+            border-width: 1px;
+            border: 1px solid $social-iconColor;
+            border-radius: 4px;
+
+            &:hover,
+            &:focus {
+                fill: $accentColor;
+                border-color: $accentColor;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+            }
         }
     }
 }

@@ -1,17 +1,135 @@
+@media screen and (min-width: 1200px) {
+    .footer {
+        font-style: normal;
+        font-size: $fontSizeSmall;
+        color: $titleColor;
+        line-height: 1.7;
+        background-color: $bgColor;
+        height: 252px;
+        padding-top: 60px;
+
+        &__sections {
+            display: flex;
+        }
+        &__logo {
+            font-family: $fontFamilyGlobal;
+            font-style: normal;
+            color: $titleColor;
+            font-weight: 700;
+            font-size: 26px;
+            background-color: $bgColor;
+            text-decoration: none;
+
+            &--web {
+                color: $accentColor;
+            }
+        }
+
+        &__address {
+            font-style: normal;
+            padding-top: 20px;
+            padding-bottom: 9px;
+            padding-right: 70px;
+            line-height: 1, 7;
+        }
+        &__contact {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: $fontSizeSmall;
+            line-height: 1.7;
+            cursor: pointer;
+
+            &:active,
+            &:hover {
+                color: $accentColor;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+            }
+        }
+        &__social {
+            margin-top: 20px;
+            justify-content: center;
+
+            &--name {
+                font-family: $fontFamilyGlobal;
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                font-style: normal;
+            }
+            &--list {
+                display: flex;
+                max-width: 206px;
+                list-style: none;
+                margin-right: 0;
+            }
+            &--item {
+                fill: $titleColor;
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.25);
+                margin-top: 20px;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                align-items: center;
+
+                &:hover {
+                    background-color: $accentColor;
+                    border-radius: 50%;
+                    transition-duration: 250ms;
+                    transition-timing-function: $cubicBezier;
+                }
+            }
+        }
+        &__newsletter {
+            padding-left: 78px;
+            padding-top: 20px;
+
+            &--name {
+                font-family: $fontFamilyGlobal;
+                font-weight: 700;
+                font-size: $fontSizeSmall;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                font-style: normal;
+            }
+
+            &--input {
+                width: 358px;
+                height: 50px;
+                color: $contactColor;
+                background-color: inherit;
+                border: 1px solid $social-iconColor;
+                border-radius: 4px;
+                padding-left: $fontSizeMedium;
+            }
+            &--icon {
+                fill: $titleColor;
+            }
+        }
+        &__button {
+            margin-top: 20px;
+            display: flex;
+            gap: 12px;
+        }
+    }
+}
 .footer {
     font-style: normal;
     font-size: $fontSizeSmall;
     color: $titleColor;
     line-height: 1.7;
     background-color: $bgColor;
-    height: 252px;
-    padding-top: 60px;
 
     &__sections {
         display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
     }
     &__logo {
         font-family: $fontFamilyGlobal;
+        letter-spacing: 0.72px;
         font-style: normal;
         color: $titleColor;
         font-weight: 700;
@@ -23,13 +141,12 @@
             color: $accentColor;
         }
     }
-
     &__address {
         font-style: normal;
         padding-top: 20px;
         padding-bottom: 9px;
-        padding-right: 70px;
         line-height: 1, 7;
+        justify-content: center;
     }
     &__contact {
         color: rgba(255, 255, 255, 0.6);
@@ -37,8 +154,7 @@
         line-height: 1.7;
         cursor: pointer;
 
-        &:active,
-        &:hover {
+        &:focus {
             color: $accentColor;
             transition-duration: 250ms;
             transition-timing-function: $cubicBezier;
@@ -55,12 +171,12 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             font-style: normal;
+            padding-top: 60px;
         }
         &--list {
             display: flex;
-            max-width: 206px;
             list-style: none;
-            margin-right: 0;
+            justify-content: center;
         }
         &--item {
             fill: $titleColor;
@@ -72,7 +188,7 @@
             border-radius: 50%;
             align-items: center;
 
-            &:hover {
+            &:focus {
                 background-color: $accentColor;
                 border-radius: 50%;
                 transition-duration: 250ms;
@@ -81,8 +197,7 @@
         }
     }
     &__newsletter {
-        padding-left: 78px;
-        padding-top: 20px;
+        padding-top: 60px;
 
         &--name {
             font-family: $fontFamilyGlobal;
@@ -91,24 +206,52 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             font-style: normal;
+            padding-top: 60px;
+            padding-bottom: 20px;
         }
 
         &--input {
-            width: 358px;
+            width: 450px;
             height: 50px;
             color: $contactColor;
             background-color: inherit;
             border: 1px solid $social-iconColor;
             border-radius: 4px;
-            padding-left: $fontSizeMedium;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         &--icon {
             fill: $titleColor;
         }
     }
     &__button {
-        margin-top: 20px;
-        display: flex;
-        gap: 12px;
+        text-align: center;
+        padding-bottom: 60px;
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        width: 786px;
+
+        &__sections {
+            display: inline-flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__social {
+            margin-top: 0;
+
+            &--name {
+                padding-top: 10px;
+            }
+        }
+    }
+    .main__button {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
     }
 }

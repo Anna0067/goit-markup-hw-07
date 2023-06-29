@@ -1,42 +1,116 @@
+@import "./global-styles";
+@media screen and (min-width: 1200px) {
+    .team {
+        background-color: $bg-iconColor;
+        max-width: 1600px;
+        margin: auto;
+
+        &__list {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            padding-bottom: 94px;
+            gap: 30px;
+        }
+        &__item {
+            text-align: center;
+            letter-spacing: 0.03em;
+            box-shadow: 0px 0px 2px 0px;
+            border-radius: 0px 0px 4px 4px;
+            padding-bottom: 30px;
+            background-color: $titleColor;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+            &--name {
+                font-weight: 500;
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+            &--job {
+                font-weight: 400px;
+                font-style: normal;
+                color: $contactColor;
+                padding-bottom: 59px, 99px;
+                height: 30px;
+            }
+        }
+
+        &__social {
+            display: flex;
+            fill: $contactColor;
+            justify-content: center;
+            margin: auto;
+            list-style: none;
+            padding-top: 12px;
+            max-height: 44px;
+            max-width: 206px;
+
+            &--item {
+                margin: auto;
+                fill: $contactColor;
+                cursor: pointer;
+                width: 44px;
+                height: 44px;
+                padding: 12px;
+
+                &:hover,
+                &:focus {
+                    fill: $titleColor;
+                    background-color: $accentColor;
+                    padding: 10px;
+                    border-radius: 50%;
+                    transition-duration: 250ms;
+                    transition-timing-function: $cubicBezier;
+                }
+            }
+        }
+    }
+}
+
 .team {
     background-color: $bg-iconColor;
-    max-width: 1600px;
+    max-width: 480px;
     margin: auto;
+    height: 2761px;
 
     &__list {
-        display: flex;
-        list-style-type: none;
-        justify-content: space-between;
-        padding-bottom: 94px;
-        gap: 30px;
+        padding-top: 30px;
+        display: block;
+        flex-direction: column;
+        list-style: none;
     }
+
     &__item {
+        border: 1px solid $contactColor;
+        width: 450px;
+        height: 460px;
+        margin: 30px 15px 10px 15px;
         text-align: center;
         letter-spacing: 0.03em;
         box-shadow: 0px 0px 2px 0px;
         border-radius: 0px 0px 4px 4px;
-        padding-bottom: 30px;
-        background-color: $titleColor;
+        background-color: $bg-iconColor;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         &--name {
             font-weight: 500;
             padding-top: 30px;
             padding-bottom: 10px;
+            text-align: center;
         }
         &--job {
             font-weight: 400px;
             font-style: normal;
             color: $contactColor;
-            padding-bottom: 59px, 99px;
             height: 30px;
+            text-align: center;
         }
     }
-
     &__social {
         display: flex;
+        flex-direction: row;
         fill: $contactColor;
-        justify-content: center;
+        justify-content: space-between;
         margin: auto;
         list-style: none;
         padding-top: 12px;
@@ -61,5 +135,11 @@
                 transition-timing-function: $cubicBezier;
             }
         }
+    }
+}
+@media screen and (min-width: 786px) {
+    .team {
+        background-color: $bg-iconColor;
+        margin: auto;
     }
 }

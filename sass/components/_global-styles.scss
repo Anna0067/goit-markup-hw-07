@@ -2,21 +2,24 @@ body {
     font-family: $fontFamilyGlobal;
     color: $primaryColor;
 }
-
-.container {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-
-    @include mobile {
-        min-width: 480px;
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
     }
-
-    @include tablet {
-        min-width: 768px;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        max-width: 100%;
+        margin: 0 auto;
     }
-    @include desktop {
-        min-width: 1200px;
+}
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 480px;
+        max-width: 100%;
     }
 }
 a {
@@ -37,22 +40,14 @@ header {
     border-width: 1px;
 }
 .headings {
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
     font-weight: 700;
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 60px;
 }
 
-.main__button {
-    color: $titleColor;
-    cursor: pointer;
-    background-color: $accentColor;
-    font-weight: 700;
-    font-size: $fontSizeMedium;
-    width: 200px;
-    height: 50px;
-}
 .is-hidden {
     pointer-events: none;
     visibility: hidden;
