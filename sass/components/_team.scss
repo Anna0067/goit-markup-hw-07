@@ -1,22 +1,18 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
     .team {
-        background-color: $bg-iconColor;
-        margin: auto;
-
         &__list {
             display: flex;
-            list-style-type: none;
             flex-basis: calc ((100% - 4 * 90) / 4);
+            height: 708px;
         }
+
         &__item {
             flex-basis: calc ((100% - 4 * 90) / 4);
+            width: 270px;
             text-align: center;
             letter-spacing: 0.03em;
-            box-shadow: 0px 0px 2px 0px;
-            border-radius: 0px 0px 4px 4px;
             padding-bottom: 30px;
             background-color: $titleColor;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
 
         &__social {
@@ -53,29 +49,31 @@
 .team {
     background-color: $bg-iconColor;
     margin: auto;
-    height: 2761px;
 
     &__list {
-        padding-top: 30px;
-        display: block;
-        flex-direction: column;
+        gap: 30px;
         list-style: none;
+        padding-top: 30px;
+
+        &--border {
+            border: 1px solid $contactColor;
+            border-radius: 0px 0px 4px 4px;
+            background-color: #fff;
+            height: 450px;
+            box-shadow: 0px 0px 2px 0px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
     }
 
     &__item {
-        border: 1px solid $contactColor;
-        width: 100%;
         object-fit: cover;
         height: auto;
         text-align: center;
         letter-spacing: 0.03em;
-        box-shadow: 0px 0px 2px 0px;
-        border-radius: 0px 0px 4px 4px;
-        background-color: $bg-iconColor;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         &--name {
             font-weight: 500;
+            font-size: 16px;
             padding-top: 30px;
             padding-bottom: 10px;
             text-align: center;
@@ -118,15 +116,37 @@
         }
     }
 }
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 601px) {
     .team {
-        background-color: $bg-iconColor;
+        display: flex;
 
         &__list {
-            width: auto;
             display: flex;
+            justify-content: center;
+            flex-direction: row;
             flex-wrap: wrap;
-            flex-basis: calc ((100% - 1 * 30) / 2);
+            gap: 20px;
+        }
+        &__social {
+            display: flex;
+
+            &--item {
+                margin: auto;
+                fill: $contactColor;
+                cursor: pointer;
+                width: 44px;
+                height: 44px;
+                padding: 12px;
+
+                &:focus {
+                    fill: $titleColor;
+                    background-color: $accentColor;
+                    padding: 10px;
+                    border-radius: 50%;
+                    transition-duration: 250ms;
+                    transition-timing-function: $cubicBezier;
+                }
+            }
         }
     }
 }

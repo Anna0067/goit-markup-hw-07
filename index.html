@@ -25,7 +25,6 @@
                                 ><span class="navigation__logo--web">Web</span
                                 >Studio</a
                             >
-
                             <button
                                 class="navigation__icon js-open-menu"
                                 aria-expanded="false"
@@ -203,36 +202,35 @@
                 <div class="container">
                     <h2 class="headings">Nasz zespół</h2>
                     <div class="team__list">
-                        <figure>
+                        <figure class="team__list--border">
                             <picture>
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe1-desktop-@1x.jpg 1x,
+                                        ./images/People/john-doe1-desktop-@2x.jpg 2x
+                                    "
+                                    media="(min-width:900px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe1-tablet-@1x.jpg 1x,
+                                        ./images/People/john-doe1-tablet-@2x.jpg 2x
+                                    "
+                                    media="(min-width:601px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe1-mobile-@1x.jpg 1x,
+                                        ./images/People/john-doe1-mobile-@2x.jpg 2x
+                                    "
+                                    media="(max-width:600px)"
+                                />
                                 <img
                                     class="team__item"
                                     alt="worker"
-                                    src="images/People/john-doe1-mobile-@1x.jpg"
-                                />
-                                <source
-                                    srcset="
-                                        images/People/john-doe1-mobile-@1x.jpg 1x,
-                                        images/People/john-doe1-mobile-@2x.jpg 2x
-                                    "
-                                    media="(min-width:480px)"
-                                />
-                                <source
-                                    srcset="
-                                        images/People/john-doe1-tablet-@1x.jpg 1x,
-                                        images/People/john-doe1-tablet-@2x.jpg 2x
-                                    "
-                                    media="(min-width:768px)"
-                                />
-                                <source
-                                    srcset="
-                                        images/People/john-doe1-desktop-@1x.jpg 1x,
-                                        images/People/john-doe1-desktop-@2x.jpg 2x
-                                    "
-                                    media="(min-width:1200px)"
+                                    src="./images/People/john-doe1-mobile-@1x.jpg"
                                 />
                             </picture>
-
                             <figcaption>
                                 <p class="team__item--name">John Doe</p>
                                 <p class="team__item--job">Product Designer</p>
@@ -276,224 +274,226 @@
                                 </ul>
                             </figcaption>
                         </figure>
-                    </div>
-                    <figure>
-                        <picture>
-                            <img
-                                class="team__item"
-                                alt="worker"
-                                src="images/People/john-doe2-mobile-@1x.jpg"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe2-mobile-@1x.jpg 1x,
-                                    images/People/john-doe2-mobile-@2x.jpg 2x
-                                "
-                                media="(min-width:480px)"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe2-tablet-@1x.jpg 1x,
-                                    images/People/john-doe2-tablet-@2x.jpg 2x
-                                "
-                                media="(min-width:768px)"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe2-desktop-@1x.jpg 1x,
-                                    images/People/john-doe2-desktop-@2x.jpg 2x
-                                "
-                                media="(min-width:1200px)"
-                            />
-                        </picture>
-                        <figcaption>
-                            <p class="team__item--name">John Doe</p>
-                            <p class="team__item--job">Frontend Developer</p>
-                            <ul class="team__social">
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-instagram"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-twitter"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-facebook"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-linkedin"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <picture>
-                            <img
-                                class="team__item"
-                                alt="worker"
-                                src="images/People/john-doe3-mobile-@1x.jpg"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe3-mobile-@1x.jpg 1x,
-                                    images/People/john-doe3-mobile-@2x.jpg 2x
-                                "
-                                media="(min-width:480px)"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe3-tablet-@1x.jpg 1x,
-                                    images/People/john-doe3-tablet-@2x.jpg 2x
-                                "
-                                media="(min-width:768px)"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe3-desktop-@1x.jpg 1x,
-                                    images/People/john-doe3-desktop-@2x.jpg 2x
-                                "
-                                media="(min-width:1200px)"
-                            />
-                        </picture>
-                        <figcaption>
-                            <p class="team__item--name">John Doe</p>
-                            <p class="team__item--job">Marketing</p>
-                            <ul class="team__social">
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-instagram"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-twitter"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-facebook"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-linkedin"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
 
-                    <figure>
-                        <picture>
-                            <img
-                                class="team__item"
-                                alt="worker"
-                                src="images/People/john-doe4-mobile-@1x.jpg"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe4-mobile-@1x.jpg 1x,
-                                    images/People/john-doe3-mobile-@2x.jpg 2x
-                                "
-                                media="(min-width:480px)"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe4-tablet-@1x.jpg 1x,
-                                    images/People/john-doe4-tablet-@2x.jpg 2x
-                                "
-                                media="(min-width:768px)"
-                            />
-                            <source
-                                srcset="
-                                    images/People/john-doe4-desktop-@1x.jpg 1x,
-                                    images/People/john-doe4-desktop-@2x.jpg 2x
-                                "
-                                media="(min-width:1200px)"
-                            />
-                        </picture>
-                        <figcaption>
-                            <p class="team__item--name">John Doe</p>
-                            <p class="team__item--job">UI Designer</p>
-                            <ul class="team__social">
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-instagram"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-twitter"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-facebook"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team__social--item">
-                                    <a href="#">
-                                        <svg width="20px" height="20px">
-                                            <use
-                                                href="./images/icons.svg/symbol-defs-social.svg#icon-linkedin"
-                                            ></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
+                        <figure class="team__list--border">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe2-desktop-@1x.jpg 1x,
+                                        ./images/People/john-doe2-desktop-@2x.jpg 2x
+                                    "
+                                    media="(min-width:900px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe2-tablet-@1x.jpg 1x,
+                                        ./images/People/john-doe2-tablet-@2x.jpg 2x
+                                    "
+                                    media="(min-width:601px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe2-mobile-@1x.jpg 1x,
+                                        ./images/People/john-doe2-mobile-@2x.jpg 2x
+                                    "
+                                    media="(max-width:600px)"
+                                />
+                                <img
+                                    class="team__item"
+                                    alt="worker"
+                                    src="./images/People/john-doe2-mobile-@1x.jpg"
+                                />
+                            </picture>
+                            <figcaption>
+                                <p class="team__item--name">John Doe</p>
+                                <p class="team__item--job">
+                                    Frontend Developer
+                                </p>
+                                <ul class="team__social">
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure class="team__list--border">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe3-desktop-@1x.jpg 1x,
+                                        ./images/People/john-doe3-desktop-@2x.jpg 2x
+                                    "
+                                    media="(min-width:900px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe3-tablet-@1x.jpg 1x,
+                                        ./images/People/john-doe3-tablet-@2x.jpg 2x
+                                    "
+                                    media="(min-width:601px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe3-mobile-@1x.jpg 1x,
+                                        ./images/People/john-doe3-mobile-@2x.jpg 2x
+                                    "
+                                    media="(max-width:600px)"
+                                />
+                                <img
+                                    class="team__item"
+                                    alt="worker"
+                                    src="./images/People/john-doe3-mobile-@1x.jpg"
+                                />
+                            </picture>
+                            <figcaption>
+                                <p class="team__item--name">John Doe</p>
+                                <p class="team__item--job">Marketing</p>
+                                <ul class="team__social">
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure class="team__list--border">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe4-desktop-@1x.jpg 1x,
+                                        ./images/People/john-doe4-desktop-@2x.jpg 2x
+                                    "
+                                    media="(min-width:900px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe4-tablet-@1x.jpg 1x,
+                                        ./images/People/john-doe4-tablet-@2x.jpg 2x
+                                    "
+                                    media="(min-width:601px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/People/john-doe4-mobile-@1x.jpg 1x,
+                                        ./images/People/john-doe4-mobile-@2x.jpg 2x
+                                    "
+                                    media="(max-width:600px)"
+                                />
+                                <img
+                                    class="team__item"
+                                    alt="worker"
+                                    src="./images/People/john-doe4-mobile-@1x.jpg"
+                                />
+                            </picture>
+                            <figcaption>
+                                <p class="team__item--name">John Doe</p>
+                                <p class="team__item--job">UI Designer</p>
+                                <ul class="team__social">
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-instagram"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-twitter"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-facebook"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="team__social--item">
+                                        <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use
+                                                    href="./images/icons.svg/symbol-defs-social.svg#icon-linkedin"
+                                                ></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </section>
             <section>
