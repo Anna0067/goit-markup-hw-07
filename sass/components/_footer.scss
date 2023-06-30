@@ -21,10 +21,6 @@
         &__social {
             justify-content: center;
 
-            &--name {
-                padding-top: 0%;
-            }
-
             &--item {
                 fill: $titleColor;
                 cursor: pointer;
@@ -136,6 +132,18 @@
             }
         }
     }
+    &__button {
+        color: $titleColor;
+        cursor: pointer;
+        background-color: $accentColor;
+        font-weight: 700;
+        font-size: $fontSizeMedium;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
     &__newsletter {
         padding-top: 30px;
 
@@ -163,11 +171,6 @@
             fill: $titleColor;
         }
     }
-    &__button {
-        text-align: center;
-        padding-bottom: 60px;
-        margin-right: 0;
-    }
 }
 @media screen and (min-width: 768px) {
     .footer {
@@ -188,7 +191,9 @@
             }
         }
     }
-    .main__button {
+}
+@media screen and (max-width: 768px) {
+    .footer__button {
         display: block;
         text-align: center;
         margin: 20px auto;
