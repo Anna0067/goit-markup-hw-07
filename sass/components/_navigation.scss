@@ -1,7 +1,6 @@
 .navigation {
     display: flex;
     flex-direction: row;
-    max-width: 480px;
     height: 80px;
     list-style: none;
 
@@ -152,7 +151,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        max-width: 768px;
         height: 80px;
         list-style: none;
 
@@ -203,6 +201,28 @@
             font-size: 14px;
             font-size: inherit;
             font-weight: 500;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 46px;
+        }
+        &__right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            padding-left: 50px;
+            padding-top: 5px;
+            font-size: $fontSizeMedium;
         }
     }
 }

@@ -2,7 +2,6 @@
 @media screen and (min-width: 1200px) {
     .team {
         background-color: $bg-iconColor;
-        max-width: 1600px;
         margin: auto;
 
         &__list {
@@ -42,7 +41,6 @@
             margin: auto;
             list-style: none;
             padding-top: 12px;
-            max-height: 44px;
             max-width: 206px;
 
             &--item {
@@ -69,7 +67,6 @@
 
 .team {
     background-color: $bg-iconColor;
-    max-width: 480px;
     margin: auto;
     height: 2761px;
 
@@ -140,6 +137,11 @@
 @media screen and (min-width: 786px) {
     .team {
         background-color: $bg-iconColor;
-        margin: auto;
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 }
