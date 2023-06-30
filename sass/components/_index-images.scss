@@ -1,10 +1,10 @@
-@media screen and (min-width: 768px) and (min-width: 786px) {
+@media screen and (min-width: 1200px) {
     .index-images {
         display: flex;
         gap: 30px;
         list-style-type: none;
         list-style: none;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-bottom: 94px;
 
         &__title {
@@ -27,7 +27,7 @@
             padding-top: 27px;
             position: absolute;
             bottom: 0;
-            top: 1540px;
+            top: 1175px;
         }
         &__title {
             position: relative;
@@ -36,12 +36,25 @@
             display: flex;
         }
     }
+    .images__heading {
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 60px;
+    }
 }
 
-.index-images {
-    display: none;
+@media screen and (min-width: 1200px) {
+    .index-images {
+        visibility: visible;
+    }
 }
-@media not screen and (min-width: 481px), (min-width: 768px) {
+
+@media not screen and (min-width: 1200px) {
+    .index-images {
+        display: none;
+    }
+}
+@media screen and (max-width: 1199px) {
     .images__heading {
         display: none;
     }

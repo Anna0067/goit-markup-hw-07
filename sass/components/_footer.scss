@@ -6,11 +6,6 @@
         height: 252px;
 
         &__contact {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: $fontSizeSmall;
-            line-height: 1.7;
-            cursor: pointer;
-
             &:active,
             &:hover {
                 color: $accentColor;
@@ -22,15 +17,7 @@
             justify-content: center;
 
             &--item {
-                fill: $titleColor;
-                cursor: pointer;
-                background-color: rgba(0, 0, 0, 0.25);
-                margin-top: 20px;
-                width: 44px;
-                height: 44px;
-                border-radius: 50%;
-                align-items: center;
-
+                &:focus,
                 &:hover {
                     background-color: $accentColor;
                     border-radius: 50%;
@@ -124,7 +111,8 @@
             border-radius: 50%;
             align-items: center;
 
-            &:focus {
+            &:focus,
+            &:hover {
                 background-color: $accentColor;
                 border-radius: 50%;
                 transition-duration: 250ms;

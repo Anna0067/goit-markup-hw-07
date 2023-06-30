@@ -210,12 +210,6 @@
         flex-direction: row;
         align-items: center;
 
-        &__left {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 46px;
-        }
         &__right {
             display: flex;
             justify-content: flex-end;
@@ -223,6 +217,38 @@
             padding-left: 50px;
             padding-top: 5px;
             font-size: $fontSizeMedium;
+        }
+        &__links {
+            color: $primaryColor;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+
+            &:hover,
+            &:focus {
+                color: $accentColor;
+                fill: $accentColor;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+            }
+        }
+        &__icons {
+            fill: $contactColor;
+            cursor: pointer;
+            color: $contactColor;
+            font-size: 14px;
+            font-size: inherit;
+            font-weight: 500;
+
+            &:hover,
+            &:focus {
+                color: $accentColor;
+                fill: $accentColor;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+            }
         }
     }
 }
