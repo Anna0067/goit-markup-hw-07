@@ -129,12 +129,16 @@
         }
     }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     .navigation__right {
         display: none;
     }
 }
-
+@media screen and (max-width: 623px) {
+    .navigation__right {
+        display: none;
+    }
+}
 .main__button {
     color: $titleColor;
     cursor: pointer;
