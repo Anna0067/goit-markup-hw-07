@@ -76,6 +76,13 @@
             display: none;
         }
     }
+    @media screen and (max-width: 617px) {
+        .navigation__links,
+        .navigation__underscore {
+            display: none;
+        }
+    }
+
     &__icon {
         fill: $primaryColor;
         cursor: pointer;

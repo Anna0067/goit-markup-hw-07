@@ -3,7 +3,16 @@
 .menu-container.is-open {
     transform: translateX(0);
 }
+@media screen and (max-width: 480px) {
+    a {
+        text-decoration: none;
+        color: inherit;
 
+        &:focus {
+            color: $accentColor;
+        }
+    }
+}
 .menu-container {
     position: fixed;
     inset: 0;
@@ -28,9 +37,11 @@
         right: 25px;
         left: 232px;
         padding: 0;
-        &:hover,
+
+        &:active,
         &:focus {
             cursor: pointer;
+            fill: $accentColor;
         }
     }
 }
