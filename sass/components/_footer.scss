@@ -1,42 +1,3 @@
-@media screen and (min-width: 1200px) {
-    .footer__sections {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 252px;
-
-        &__contact {
-            &:active,
-            &:hover {
-                color: $accentColor;
-                transition-duration: 250ms;
-                transition-timing-function: $cubicBezier;
-            }
-        }
-        &__social {
-            justify-content: center;
-
-            &--item {
-                &:focus,
-                &:hover {
-                    background-color: $accentColor;
-                    border-radius: 50%;
-                    transition-duration: 250ms;
-                    transition-timing-function: $cubicBezier;
-                }
-            }
-        }
-        &__newsletter {
-            display: flex;
-            flex-direction: row;
-        }
-        &__button {
-            display: flex;
-            padding-bottom: 20px;
-        }
-    }
-}
-
 .footer {
     font-style: normal;
     font-size: $fontSizeSmall;
@@ -129,11 +90,10 @@
         width: 200px;
         height: 50px;
         margin-top: 30px;
-        margin-left: 10px;
     }
 
     &__newsletter {
-        padding-top: 30px;
+        padding-top: 40px;
 
         &--name {
             font-family: $fontFamilyGlobal;
@@ -160,6 +120,7 @@
         }
     }
 }
+
 @media screen and (min-width: 768px) {
     .footer {
         width: 100%;
@@ -185,5 +146,43 @@
         display: block;
         text-align: center;
         margin: 20px auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer__sections {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 252px;
+
+        &__contact {
+            &:active,
+            &:hover {
+                color: $accentColor;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+            }
+        }
+        &__social {
+            justify-content: center;
+
+            &--item {
+                &:focus,
+                &:hover {
+                    background-color: $accentColor;
+                    border-radius: 50%;
+                    transition-duration: 250ms;
+                    transition-timing-function: $cubicBezier;
+                }
+            }
+        }
+        &__newsletter {
+            display: flex;
+            flex-direction: row;
+        }
+        &__button {
+            display: flex;
+            padding-bottom: 20px;
+        }
     }
 }

@@ -1,25 +1,3 @@
-@media screen and (min-width: 1200px) {
-    .lorem-ipsum {
-        flex-wrap: nowrap;
-        width: auto;
-
-        &__icons {
-            text-align: center;
-            background-color: $bg-iconColor;
-            margin: auto;
-            width: 270px;
-        }
-        &__name {
-            padding-bottom: 10px;
-            padding-left: 25px;
-        }
-        &__description {
-            height: 75px;
-            padding-bottom: 94px;
-            padding-left: 25px;
-        }
-    }
-}
 @media screen and (max-width: 480px) {
     .lorem-ipsum {
         display: block;
@@ -53,17 +31,18 @@
             letter-spacing: 0.03em;
             color: $contactColor;
             text-align: left;
-            width: 450px;
             height: 50px;
             padding-bottom: 94px;
             padding-right: 15px;
             padding-left: 15px;
+            max-width: 480px;
         }
     }
 }
 @media screen and (min-width: 768px) {
     .lorem-ipsum {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         list-style: none;
         gap: 30px;
@@ -76,6 +55,7 @@
             background-color: $bg-iconColor;
             height: 120px;
             padding: 25px 100px;
+            width: 354px;
         }
         &__name {
             font-weight: 700;
@@ -84,6 +64,7 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             padding-top: 30px;
+            padding-bottom: 10px;
         }
         &__description {
             font-size: $fontSizeSmall;
@@ -91,8 +72,29 @@
             letter-spacing: 0.03em;
             color: $contactColor;
             text-align: left;
-            width: 330px;
+            width: 354px;
             height: 75px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .lorem-ipsum {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        &__icons {
+            text-align: center;
+            background-color: $bg-iconColor;
+            width: 270px;
+        }
+        &__name {
+            padding-bottom: 10px;
+        }
+        &__description {
+            height: 75px;
+            padding-bottom: 94px;
+            width: 270px;
         }
     }
 }
