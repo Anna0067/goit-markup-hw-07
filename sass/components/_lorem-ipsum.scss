@@ -1,6 +1,7 @@
 @media screen and (max-width: 480px) {
     .lorem-ipsum {
         display: block;
+        justify-content: center;
         flex-direction: column;
         gap: 20px;
         list-style: none;
@@ -39,9 +40,10 @@
         }
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
     .lorem-ipsum {
         display: flex;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         list-style: none;

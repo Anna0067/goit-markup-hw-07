@@ -7,7 +7,6 @@
         padding: 30px 15px;
 
         &--border {
-            width: 400px;
             margin-top: 15px;
             border-radius: 0px 0px 4px 4px;
             background-color: #fff;
@@ -71,6 +70,7 @@
     .team {
         display: flex;
         flex-basis: calc((100% - 1 * 20px) / 2);
+        flex-direction: row;
 
         &__list {
             display: flex;
@@ -80,6 +80,7 @@
             flex-basis: calc((100% - 1 * 20px) / 2);
         }
         &--border {
+            width: 354px;
             border-radius: 0px 0px 4px 4px;
             background-color: #fff;
             border-color: $contactColor;
@@ -110,7 +111,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
     .team {
         &__list {
             display: flex;
