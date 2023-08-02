@@ -12,7 +12,7 @@
         padding-top: 60px;
     }
     &__logo {
-        font-family: $fontFamilyGlobal;
+        font-family: $fontFamilyLogo;
         letter-spacing: 0.72px;
         font-style: normal;
         color: $titleColor;
@@ -106,7 +106,7 @@
         }
 
         &--input {
-            width: 450px;
+            width: 100%;
             height: 50px;
             color: $contactColor;
             background-color: inherit;

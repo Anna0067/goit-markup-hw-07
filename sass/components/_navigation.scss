@@ -1,39 +1,17 @@
+.header__style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .navigation {
     display: flex;
     flex-direction: row;
     height: 80px;
     list-style: none;
 
-    &__mobile {
-        display: flex;
-        flex-direction: row;
-        gap: 130px;
-    }
-
-    &__icon {
-        background-color: transparent;
-        border: none;
-        height: 16px;
-        cursor: pointer;
-        fill: $primaryColor;
-        justify-content: flex-end;
-
-        &:focus {
-            fill: $accentColor;
-        }
-
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
-    }
-
-    &__left {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 46px;
-        list-style: none;
-    }
+    //*  &__mobile {
+    //*      display: flex;
+    //*      flex-direction: row;
 
     &__logo {
         font-style: normal;
@@ -43,19 +21,29 @@
         letter-spacing: 0.03em;
         text-decoration: none;
         text-shadow: 2px, 2px, 4px, $primaryColor;
-        font-family: $fontFamilyGlobal;
+        font-family: $fontFamilyLogo;
         letter-spacing: 0.03em;
         text-shadow: 2px, 2px, 4px, $textColor;
         color: $accentColor;
         color: $primaryColor;
-        padding-left: 15px;
-        padding-right: 160px;
+        padding: 11px 0px 11px 15px;
 
         &--web {
             color: $accentColor;
         }
     }
 
+    &__icon {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        fill: $primaryColor;
+        justify-content: flex-end;
+
+        &:focus {
+            fill: $accentColor;
+        }
+    }
     &__links {
         color: $primaryColor;
         cursor: pointer;
@@ -71,71 +59,83 @@
             transition-timing-function: $cubicBezier;
         }
     }
-    @media screen and (max-width: 480px) {
-        &__links {
-            display: none;
-        }
+}
+@media screen and (min-width: 768px) {
+    .navigation__mobile {
+        display: none;
     }
-    @media screen and (max-width: 617px) {
-        .navigation__links,
-        .navigation__underscore {
-            display: none;
-        }
+}
+.navigation {
+    &__left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
     }
+}
+@media screen and (max-width: 480px) {
+    .navigation__links {
+        display: none;
+    }
+}
+@media screen and (max-width: 617px) {
+    .navigation__links,
+    .navigation__underscore {
+        display: none;
+    }
+}
 
-    &__icon {
-        fill: $primaryColor;
-        cursor: pointer;
-        font-weight: 500;
-        justify-content: right;
-        font-size: $fontSizeSmall;
-        transition-duration: 250ms;
-        transition-timing-function: $cubicBezier;
+.navigation__icon {
+    fill: $primaryColor;
+    cursor: pointer;
+    font-weight: 500;
+    justify-content: right;
+    transition-duration: 250ms;
+    transition-timing-function: $cubicBezier;
 
-        &:active,
-        &:hover {
-            color: $accentColor;
-            fill: $accentColor;
-        }
+    &:active,
+    &:hover {
+        color: $accentColor;
+        fill: $accentColor;
     }
 
     &__underscore {
         position: relative;
         top: 28px;
-
-        @media screen and (min-width: 481px) {
-            &__underscore {
-                display: none;
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                display: block;
-                width: 53px;
-                height: 4px;
-                background-color: $accentColor;
-                border-radius: 2px;
-            }
+    }
+    @media screen and (min-width: 481px) {
+        &__underscore {
+            display: none;
         }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 53px;
+            height: 4px;
+            background-color: $accentColor;
+            border-radius: 2px;
+        }
+    }
 
-        &__underscore-portfolio {
-            position: relative;
-            top: 28px;
+    &__underscore-portfolio {
+        position: relative;
+        top: 28px;
 
-            &__underscore-portfolio::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                display: block;
-                width: 58px;
-                height: 4px;
-                background-color: $accentColor;
-                border-radius: 2px;
-            }
+        &__underscore-portfolio::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 58px;
+            height: 4px;
+            background-color: $accentColor;
+            border-radius: 2px;
         }
     }
 }
+
 @media screen and (max-width: 767px) {
     .navigation__right {
         display: none;
@@ -184,11 +184,11 @@
             padding-right: 10px;
         }
 
-        &__left {
-            display: flex;
-            justify-content: flex-start;
-            list-style: none;
-        }
+        //* &__left {
+        //*     display: flex;
+        //*     justify-content: flex-start;
+        //*     list-style: none;
+        //* }
 
         &__links {
             color: $primaryColor;

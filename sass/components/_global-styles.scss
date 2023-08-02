@@ -3,20 +3,25 @@ body {
     color: $primaryColor;
 }
 
-@media screen and (min-width: 480px) {
-    .container {
-        width: 100%;
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
     }
-}
-img {
-    max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-        margin: 0 auto;
-    }
+img {
+    max-width: 100%;
 }
 
 a {
@@ -51,4 +56,14 @@ header {
     opacity: 0;
     transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
         skew(40deg 40deg);
+}
+
+.section {
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    padding-top: 94px;
+    padding-bottom: 94px;
 }

@@ -35,7 +35,7 @@
         position: absolute;
         top: 21px;
         right: 25px;
-        left: 232px;
+        left: 270px;
         padding: 0;
 
         &:active,
@@ -57,6 +57,10 @@
     list-style: none;
     text-decoration: none;
     color: $primaryColor;
+
+    &__agencja {
+        color: $accentColor;
+    }
 }
 
 .mobile-contact {
