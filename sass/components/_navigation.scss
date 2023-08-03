@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
 }
+.header-nav {
+    display: none;
+}
+
 .navigation {
     display: flex;
     flex-direction: row;

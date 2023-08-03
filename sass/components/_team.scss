@@ -4,7 +4,6 @@
     &__list {
         gap: 30px;
         list-style: none;
-        padding: 30px 15px;
 
         &--border {
             margin-top: 15px;
@@ -37,16 +36,14 @@
     }
     &__social {
         display: flex;
+        justify-content: center;
         flex-direction: row;
         fill: $contactColor;
-        justify-content: space-between;
-        margin: auto;
         list-style: none;
-        padding-bottom: 20px;
-        max-width: 206px;
+        gap: 10px;
+        padding-bottom: 30px;
 
         &--item {
-            margin: auto;
             fill: $contactColor;
             cursor: pointer;
             width: 44px;
@@ -91,7 +88,6 @@
             display: flex;
 
             &--item {
-                margin: auto;
                 fill: $contactColor;
                 cursor: pointer;
                 width: 44px;
