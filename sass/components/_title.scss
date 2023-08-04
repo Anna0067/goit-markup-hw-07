@@ -22,47 +22,64 @@
     width: 200px;
     height: 50px;
     margin-top: 30px;
+            border: none;
+        border-radius: 4px;
+        letter-spacing: 0.96px;
 }*/
 
 @media screen and (max-width: 768px) {
     .title {
         padding: 118px 0;
-        max-width: 480px;
+        max-width: 768px;
         height: 400px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         background-repeat: no-repeat;
         background-size: cover;
+
         background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        );
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            filter drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25))
+                url("../images/responsive-background/mobile-background-1x.jpg");
+    }
 
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-        background-image: url("../images/responsive-background/mobile-background-1x.jpg");
-
-        @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-            .title {
-                background-image: url("../images/responsive-background/mobile-background-2x.jpg");
-            }
-        }
-
-        &__name {
-            color: $titleColor;
-            text-align: center;
-            font-family: Roboto;
-            font-size: 26px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 42px;
-            letter-spacing: 1.56px;
-            text-transform: uppercase;
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .title {
+            background-image: url("../images/responsive-background/mobile-background-2x.jpg");
         }
     }
+
+    .title__name {
+        color: $titleColor;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 1.56px;
+        text-transform: uppercase;
+    }
+}
+.main__button {
+    color: $titleColor;
+    cursor: pointer;
+    background-color: $accentColor;
+    font-weight: 700;
+    font-size: $fontSizeMedium;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.96px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -73,10 +90,5 @@
             font-size: 44px;
             font-family: $fontFamilyGlobal;
         }
-    }
-    .main__button {
-        display: block;
-        text-align: center;
-        margin-left: 500px;
     }
 }

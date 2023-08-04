@@ -82,9 +82,10 @@
         display: none;
     }
 }
-@media screen and (max-width: 617px) {
+@media screen and (min-width: 760px) {
     .navigation__links,
-    .navigation__underscore {
+    .navigation__underscore,
+    .navigation__icon {
         display: none;
     }
 }
@@ -149,16 +150,6 @@
     .navigation__right {
         display: none;
     }
-}
-.main__button {
-    color: $titleColor;
-    cursor: pointer;
-    background-color: $accentColor;
-    font-weight: 700;
-    font-size: $fontSizeMedium;
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
