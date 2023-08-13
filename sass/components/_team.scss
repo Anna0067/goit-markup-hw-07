@@ -68,7 +68,6 @@
 
 @media screen and (max-width: 768px) {
     .team {
-        display: flex;
         flex-basis: calc((100% - 1 * 20px) / 2);
         flex-direction: row;
         padding: 60px 0;

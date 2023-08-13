@@ -1,32 +1,3 @@
-/*.title {
-    color: #fff;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 42px;
-    letter-spacing: 1.56px;
-    text-transform: uppercase;
-
-    &__name {
-        display: inline-block;
-    }
-}
-.main__button {
-    color: $titleColor;
-    cursor: pointer;
-    background-color: $accentColor;
-    font-weight: 700;
-    font-size: $fontSizeMedium;
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
-            border: none;
-        border-radius: 4px;
-        letter-spacing: 0.96px;
-}*/
-
 @media screen and (max-width: 768px) {
     .title {
         padding: 118px 0;
@@ -54,6 +25,25 @@
         }
     }
 
+    @media screen and (max-width: 1200px) {
+        .title {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                filter drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25))
+                    url("../images/responsive-background/tablet-background-1x.jpg");
+
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                .title {
+                    background-image: url("../images/responsive-background/tablet-background-2x.jpg");
+                }
+            }
+        }
+    }
+
     .title__name {
         color: $titleColor;
         display: flex;
@@ -68,6 +58,7 @@
         text-transform: uppercase;
     }
 }
+
 .main__button {
     color: $titleColor;
     cursor: pointer;
@@ -80,15 +71,41 @@
     border: none;
     border-radius: 4px;
     letter-spacing: 0.96px;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.96px;
 }
 
 @media screen and (min-width: 1200px) {
     .title {
-        &__name {
-            width: 600px;
-            line-height: 60px;
-            font-size: 44px;
-            font-family: $fontFamilyGlobal;
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            filter drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25))
+                url("../images/responsive-background/desktop-background-1x.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url("../images/responsive-background/desktop-background-2x.jpg");
         }
+
+        max-width: 1600px;
+        height: 600px;
+        background-size: cover;
+        text-align: center;
+        background-repeat: no-repeat;
+    }
+    .title__name {
+        color: $titleColor;
+        text-align: center;
+        height: 120px;
+        width: 696px;
+        line-height: 60px;
+        margin-left: 452px;
+        letter-spacing: 2.64px;
+        font-size: 44px;
+        font-family: $fontFamilyGlobal;
     }
 }

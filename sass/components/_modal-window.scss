@@ -49,6 +49,7 @@
         color: $primaryColor;
     }
     &__label {
+        width: 370px;
         padding-top: 12px;
         padding-bottom: 4px;
         font-weight: 400;
@@ -60,6 +61,7 @@
         border-color: $bg-iconColor;
     }
     &__input {
+        width: 370px;
         height: 40px;
         margin-right: 25px;
         margin-left: 25px;
@@ -106,7 +108,7 @@
         }
     }
     &__textarea {
-        width: 100%;
+        width: 200px;
         height: 120px;
         background-color: inherit;
         border: 1px solid color rgba(117, 117, 117, 0.5);
@@ -222,9 +224,6 @@
         font-size: $fontSizeMedium;
         width: 200px;
         height: 50px;
-        border: none;
-        border-radius: 4px;
-        letter-spacing: 0.96px;
     }
 }
 @media screen and (min-width: 1200px) {
