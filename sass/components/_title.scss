@@ -56,6 +56,9 @@
         line-height: 42px;
         letter-spacing: 1.56px;
         text-transform: uppercase;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -99,11 +102,10 @@
     }
     .title__name {
         color: $titleColor;
-        text-align: center;
+        display: flex;
+        justify-content: center;
         height: 120px;
-        width: 696px;
         line-height: 60px;
-        margin-left: 452px;
         letter-spacing: 2.64px;
         font-size: 44px;
         font-family: $fontFamilyGlobal;

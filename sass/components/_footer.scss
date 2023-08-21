@@ -172,12 +172,13 @@
         margin: 20px auto;
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .footer__sections {
         display: flex;
         justify-content: center;
         flex-direction: row;
         width: 100%;
+        flex-wrap: nowrap;
 
         &__contact {
             &:active,

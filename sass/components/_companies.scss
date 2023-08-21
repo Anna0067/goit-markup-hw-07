@@ -35,6 +35,10 @@
         gap: 30px;
         list-style: none;
 
+        &__icons--item {
+            fill: $bg-iconColor;
+        }
+
         &__border {
             cursor: pointer;
             padding: 16px 32px;
@@ -62,6 +66,10 @@
         flex-wrap: nowrap;
         gap: 30px;
         margin-bottom: 94px;
+
+        &--item {
+            fill: $bg-iconColor;
+        }
 
         &__border {
             cursor: pointer;
