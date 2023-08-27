@@ -5,16 +5,6 @@
     gap: 276px;
 }
 
-@media screen and (max-width: 767px) {
-    .header-nav {
-        display: none;
-    }
-}
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -216,6 +206,16 @@
     .header__style {
         display: flex;
         gap: 70px;
+    }
+    @media screen and (max-width: 767px) {
+        .header-nav,
+        .navigation {
+            display: none;
+        }
+    }
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
     }
 }
 @media screen and (min-width: 1200px) {
