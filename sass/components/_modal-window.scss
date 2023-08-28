@@ -1,16 +1,16 @@
 .modal {
     position: relative;
-    margin: 10px;
     background: $titleColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
     width: 95%;
-    max-width: 450px;
-    height: 95%;
-    max-height: 609px;
+    height: 609px;
     overflow: scroll;
     cursor: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -34,7 +34,6 @@
         display: flex;
         flex-direction: column;
         gap: 28px;
-        padding: 25px;
         width: 100%;
     }
     &__title {
@@ -47,9 +46,11 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: $primaryColor;
+        width: 370px;
+        height: 60px;
         margin-top: 40px;
-        width: 90%;
-        margin-left: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     &__label {
         width: 370px;
@@ -66,8 +67,8 @@
     &__input {
         width: 370px;
         height: 40px;
-        margin-right: 25px;
-        margin-left: 25px;
+        margin-right: 40px;
+        margin-left: 40px;
         display: block;
         position: relative;
         transition-property: fill;
@@ -80,8 +81,8 @@
             border-color: $accentColor;
         }
         &--style {
-            height: 35px;
-            width: 90%;
+            height: 40px;
+            width: 370px;
             padding-left: 35px;
             border-color: $contactColor;
             border: 1px solid;
@@ -112,7 +113,7 @@
         }
     }
     &__textarea {
-        width: 90%;
+        width: 370px;
         height: 120px;
         border: 1px solid color rgba(117, 117, 117, 0.5);
         border-radius: 4px;
@@ -128,25 +129,24 @@
         }
     }
     &__checkbox {
-        margin-right: 25px;
-        margin-left: 25px;
         font-size: 12px;
         line-height: 2;
         letter-spacing: 0.03em;
         color: $contactColor;
         display: flex;
         align-items: center;
-        margin-top: 90px;
+        margin-top: 80px;
         padding-bottom: 0;
 
         & a {
             color: $accentColor;
         }
         &--checked {
+            transform: translateY(-30%);
             width: 16px;
             height: 15px;
+            margin-left: 40px;
             border: 1px solid $contactColor;
-            margin-right: 8px;
             border-radius: 4px;
             transition: border 250ms $cubicBezier;
             cursor: pointer;
@@ -188,12 +188,16 @@
             appearance: none;
         }
         &--text {
+            width: 346px;
+            font-size: 12px;
+            letter-spacing: 0.36px;
+            font-weight: 400;
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 31px;
             margin-left: 8px;
             font-family: $fontFamilyGlobal;
             font-style: normal;
-            font-weight: 400;
-            font-size: $fontSizeSmall;
-            line-height: 24px;
         }
     }
     &__button {
@@ -227,27 +231,32 @@
 
         &__title {
             text-align: center;
-            margin-left: 25px;
-            margin-top: 40px;
             width: 370px;
+            height: 60px;
+            margin-left: 40px;
         }
 
-        &__input--style {
-            width: 370px;
-            height: 40px;
-            margin-right: 25px;
-            display: block;
-            position: relative;
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: $cubicBezier;
+        &__input {
+            margin-left: 40px;
+            margin-right: 40px;
 
-            &:hover,
-            &:focus-within {
-                fill: $accentColor;
-                border-color: $accentColor;
+            &--style {
+                width: 370px;
+                height: 40px;
+                display: block;
+                position: relative;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: $cubicBezier;
+
+                &:hover,
+                &:focus-within {
+                    fill: $accentColor;
+                    border-color: $accentColor;
+                }
             }
         }
+
         &__textarea {
             width: 370px;
             height: 120px;
@@ -260,6 +269,26 @@
         }
     }
 
+    .modal__checkbox {
+        margin-right: 40px;
+        justify-content: baseline;
+
+        .modal__checkbox--text {
+            width: 346px;
+            font-size: 12px;
+            letter-spacing: 0.36px;
+            font-weight: 400;
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 31px;
+        }
+        .modal__checkbox--checked {
+            width: 16px;
+            height: 15px;
+            transform: translateY(-30%);
+        }
+    }
+
     .main__button {
         color: $titleColor;
         cursor: pointer;
@@ -268,12 +297,44 @@
         font-size: $fontSizeMedium;
         width: 200px;
         height: 50px;
+        margin-top: 31px;
     }
 }
 @media screen and (min-width: 1200px) {
     .modal {
+        overflow: auto;
+        width: 528px;
+        height: 600px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        &__title {
+            height: 23px;
+            width: 448px;
+            line-height: normal;
+        }
+
+        &__style {
+            width: 528px;
+            height: 581px;
+        }
+
+        &__label {
+            width: 448px;
+        }
+        &__input--style {
+            width: 448px;
+            height: 40px;
+        }
+
+        &__textarea {
+            width: 448px;
+            height: 120px;
+        }
+
+        &__checkbox--text {
+            font-size: $fontSizeSmall;
+        }
     }
 }
