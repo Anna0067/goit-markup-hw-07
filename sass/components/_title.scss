@@ -14,7 +14,7 @@
                 rgba(47, 48, 58, 0.4)
             ),
             filter drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25))
-                url("../images/responsive-background/mobile-background-1x.jpg");
+                url("/images/responsive-background/mobile-background-1x.jpg");
     }
 }
 
@@ -22,7 +22,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .title {
-        background-image: url("../images/responsive-background/mobile-background-2x.jpg");
+        background-image: url("/images/responsive-background/mobile-background-2x.jpg");
     }
 }
 
@@ -68,14 +68,14 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url("../images/responsive-background/tablet-background-1x.png");
+            url("/images/responsive-background/tablet-background-1x.png");
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
             .title {
-                background-image: url("../images/responsive-background/tablet-background-2x.png");
+                background-image: url("/images/responsive-background/tablet-background-2x.png");
             }
         }
         &__name {
@@ -91,22 +91,38 @@
 
     @media screen and (min-width: 1200px) {
         .title {
-            width: 1600px;
+            font-family: "Raleway", sans-serif;
+            color: var(--title);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 1, 4;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            max-width: 1600px;
+            margin: auto;
             height: 600px;
+            padding-top: 200px;
             background-image: linear-gradient(
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)
                 ),
-                url("../images/responsive-background/desktop-background-1x.jpg");
+                url("/images/responsive-background/desktop-background-1x.jpg");
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
             @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192dpi),
                 screen and (min-resolution: 2dppx) {
                 .title {
-                    background-image: url("../images/responsive-background/desktop-background-2x.jpg");
+                    background-image: url("/images/responsive-background/desktop-background-2x.jpg");
                 }
             }
+        }
+
+        .main__button {
+            display: flex;
+            justify-content: center;
         }
     }
 }

@@ -220,7 +220,7 @@
             $cubicBezier;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1999px) {
     .modal {
         position: relative;
         height: 609px;
@@ -317,7 +317,7 @@
 
         &__style {
             width: 528px;
-            height: 581px;
+            height: 600px;
         }
 
         &__label {
@@ -332,9 +332,8 @@
             width: 448px;
             height: 120px;
         }
-
-        &__checkbox--text {
-            font-size: $fontSizeSmall;
-        }
+    }
+    .modal__checkbox--text {
+        font-size: 14px;
     }
 }

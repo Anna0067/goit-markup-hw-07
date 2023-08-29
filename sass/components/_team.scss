@@ -4,6 +4,7 @@
     &__list {
         gap: 30px;
         list-style: none;
+        justify-content: center;
 
         &--border {
             border-radius: 0px 0px 4px 4px;
@@ -129,7 +130,7 @@
         &__list {
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             justify-content: center;
             margin-bottom: 94px;
             flex-basis: calc ((100% - 4 * 90) / 4);
