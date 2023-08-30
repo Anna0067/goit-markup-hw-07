@@ -1,28 +1,25 @@
-@media screen and (max-width: 767px) {
-    .title {
-        padding: 118px 0;
-        max-width: 768px;
-        height: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        background-image: linear-gradient(
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)
-            ),
-            filter drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25))
-                url("/images/responsive-background/mobile-background-1x.jpg");
-    }
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1600px;
+    min-height: 400px;
+    background-color: rgba(47, 48, 58);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/responsive-background/main-image-1x.jpg");
 }
 
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .title {
-        background-image: url("/images/responsive-background/mobile-background-2x.jpg");
+        background-image: url("../images/responsive-background/main-image-2x.jpg");
     }
 }
 
@@ -58,71 +55,51 @@
     border: none;
     border-radius: 4px;
     letter-spacing: 0.96px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 130px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .title {
-        width: 768px;
         height: 400px;
-        background-image: linear-gradient(
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)
-            ),
-            url("/images/responsive-background/tablet-background-1x.png");
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-        @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-            .title {
-                background-image: url("/images/responsive-background/tablet-background-2x.png");
-            }
-        }
         &__name {
-            padding-top: 118px;
             padding-left: 170px;
             padding-right: 170px;
         }
-
         .main__button {
             margin-left: 260px;
         }
     }
+}
 
-    @media screen and (min-width: 1200px) {
-        .title {
-            font-family: "Raleway", sans-serif;
-            color: var(--title);
+@media screen and (min-width: 1200px) {
+    .title {
+        font-family: "Raleway", sans-serif;
+        color: $titleColor;
+        max-width: 1600px;
+        margin: auto;
+        height: 600px;
+
+        &__name {
             font-style: normal;
-            font-weight: 700;
-            font-size: 44px;
-            line-height: 1, 4;
+            font-weight: 900;
+            line-height: 60px;
+            line-height: 60px;
+            letter-spacing: 2.64px;
             text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            max-width: 1600px;
-            margin: auto;
-            height: 600px;
-            padding-top: 200px;
-            background-image: linear-gradient(
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)
-                ),
-                url("/images/responsive-background/desktop-background-1x.jpg");
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-            @media screen and (min-device-pixel-ratio: 2),
-                screen and (min-resolution: 192dpi),
-                screen and (min-resolution: 2dppx) {
-                .title {
-                    background-image: url("/images/responsive-background/desktop-background-2x.jpg");
-                }
-            }
-        }
-
-        .main__button {
+            font-size: 44px;
+            width: 696px;
+            height: 120px;
             display: flex;
             justify-content: center;
+            text-align: center;
         }
+    }
+    .main__button {
+        margin: auto;
+        justify-content: center;
+        text-align: center;
     }
 }
