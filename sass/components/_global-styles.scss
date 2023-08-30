@@ -46,6 +46,9 @@ body {
 
     @media screen and (min-width: 1200px) {
         width: 1470px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
