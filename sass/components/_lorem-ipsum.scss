@@ -8,7 +8,7 @@
     &__icons {
         background-color: $bg-iconColor;
         height: 120px;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
     }
@@ -42,10 +42,12 @@
         flex-wrap: wrap;
 
         &__item {
+            fill: $textColor;
             max-width: 354px;
         }
 
         &__icons {
+            fill: $textColor;
             background-color: $bg-iconColor;
             height: 120px;
             display: flex;
@@ -82,6 +84,7 @@
         justify-content: center;
 
         &__icons {
+            fill: $textColor;
             text-align: center;
             background-color: $bg-iconColor;
             width: 270px;
